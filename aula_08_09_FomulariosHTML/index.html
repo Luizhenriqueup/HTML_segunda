@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="fundo" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms html</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div>
+        <h1>formularios html</h1>
+    </div>
+    <div class="meio borda">
+        <form action="#" method="post">
+        <label for="nome">nome</label>
+        <input id="nome" nome="nome" type="text" placeholder="seu nome" maxlength="5" required>
+        <br>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="email@gmail.com" id="email">
+        <br>
+        <br>
+        <label for="periodo">Periodo</label>
+        <br>
+        <br>
+        <input type="number" name="periodo" id="periodo" max="4" min="0">
+        <br>
+        <br>
+        <label for="nasc">Data de Nascimento</label>
+        <input type="date" name="nasc" id="nasc">
+        <br>
+        <br>
+        <label for="Passoword">senha</label>
+        <input type="password" passoword="passoword" placeholder="Sua senha" maxlength="8">
+        <br>
+        <br>
+        <label for="feliz">Nivel da sua felicidade</label>
+        <input type="range" name="feliz" id="feliz">
+        <p>Você gosta de estudar</p>
+        <label for="estuda">Sim</label>
+        <input type="radio" name="estuda"> 
+        <label for="naoestuda">Não</label>
+        <input type="radio" name="estuda">
+        <p>Quais materias voce mais gosta</p>
+        <label for="alg">Algoritimos</label>
+        <input type="checkbox" name="alg">
+        <br>
+        <label for="html">html</label>
+        <input type="checkbox" name="html">
+        <br>
+        <label for="sql">SQL</label>
+        <input type="checkbox" name="sql">
+        <br>
+        <input type="submit" value="salvar" required>
+    </form>
+    </div>
+</body>
+</html>
