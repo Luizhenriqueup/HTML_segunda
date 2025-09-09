@@ -1,0 +1,11 @@
+.fundo{
+    background-color: salmon;
+}
+
+.borda{
+    border: 3px solid;
+    border-color: red;
+    width: 200px;
+    margin-left: 550px;
+    background-color: brown;
+}
