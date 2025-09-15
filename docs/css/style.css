@@ -86,9 +86,9 @@ table {
   transition: 0.3s ease;
 }
 
-/* Quando a seção é o alvo (target) */
 .borda:target {
   background-color: darkgreen;
   color: yellow;
   border-color: yellow;
 }
+
