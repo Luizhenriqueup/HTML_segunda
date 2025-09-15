@@ -1,42 +1,94 @@
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 2rem; 
+  text-align: center;
 }
+
 table {
-            border-collapse: separate;
-            width: 100%;
-        }
-.meio{
-    text-align: center;
+  border-collapse: separate;
+  width: 100%;
+  max-width: 900px; 
+  margin: auto;}
+
+.meio {
+  text-align: center;
 }
-.corfundo{
-    background-color: rgb(170, 166, 166);
+
+.corfundo {
+  background-color: rgb(170, 166, 166);
 }
-.fonteletras{
-    font-family: 'Courier New', Courier, monospace;
+
+.fonteletras {
+  font-family: 'Courier New', Courier, monospace;
 }
-.fonteletra1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.fonteletrai {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.borda{
-    border: 2px solid;
-    border-color: green;
-    border-width: 5px;
-    background-color: green;
+
+.borda {
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: green;
+  padding: 0.5rem;
 }
-.borda1{
-    border: 1px solid;
-    border-color: rgb(120, 186, 120);
-    border-width: 5px;
-    background-color: rgb(120, 186, 120);
-    border-radius: 30px;
+
+.borda1 {
+  border: 1px solid rgb(120, 186, 120);
+  border-radius: 15px;
+  background-color: rgb(120, 186, 120);
+  padding: 0.5rem;
 }
-.letra{
-    font-size: medium;
+
+.letra {
+  font-size: 1rem; 
 }
-.cor1{
-    border: 1px solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 2px;
-    background-color: rgb(158, 150, 150);
-    border-radius: 20px;
+
+.cor1 {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(158, 150, 150);
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  .letra {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  .borda, .borda1, .cor1 {
+    padding: 0.3rem;
+  }
+}
+.borda {
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: green;
+  padding: 0.5rem;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Quando a seção é o alvo (target) */
+.borda:target {
+  background-color: darkgreen;
+  color: yellow;
+  border-color: yellow;
 }
