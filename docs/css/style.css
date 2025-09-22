@@ -1,13 +1,14 @@
 h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
   text-align: center;
 }
 
 table {
   border-collapse: separate;
   width: 100%;
-  max-width: 900px; 
-  margin: auto;}
+  max-width: 56.25rem;
+  margin: auto;
+}
 
 .meio {
   text-align: center;
@@ -18,72 +19,53 @@ table {
 }
 
 .fonteletras {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.fonteletrai {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Times New Roman', Times, serif
 }
 
 .borda {
-  border: 2px solid green;
-  border-radius: 10px;
-  background-color: green;
-  padding: 0.5rem;
-}
-
-.borda1 {
-  border: 1px solid rgb(120, 186, 120);
-  border-radius: 15px;
-  background-color: rgb(120, 186, 120);
-  padding: 0.5rem;
-}
-
-.letra {
-  font-size: 1rem; 
-}
-
-.cor1 {
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  background-color: rgb(158, 150, 150);
-  padding: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  table {
-    font-size: 0.9rem;
-  }
-
-  .letra {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  table {
-    font-size: 0.8rem;
-  }
-
-  .borda, .borda1, .cor1 {
-    padding: 0.3rem;
-  }
-}
-.borda {
-  border: 2px solid green;
-  border-radius: 10px;
+  border: 0.125rem solid green;
+  border-radius: 0.625rem;
   background-color: green;
   padding: 0.5rem;
   color: white;
   transition: 0.3s ease;
+}
+
+.borda1 {
+  border: 0.0625rem solid rgb(120, 186, 120);
+  border-radius: 0.9375rem;
+  background-color: rgb(120, 186, 120);
+  padding: 0.5rem;
+}
+
+.cor1 {
+  border: 0.0625rem solid rgb(0, 0, 0);
+  border-radius: 0.625rem;
+  background-color: rgb(158, 150, 150);
+  padding: 0.5rem;
+}
+
+@media (max-width: 48rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  table {
+    font-size: 0.8rem;
+  }
+  .borda,
+  .borda1,
+  .cor1 {
+    padding: 0.3rem;
+  }
 }
 
 .borda:target {
@@ -91,4 +73,17 @@ table {
   color: yellow;
   border-color: yellow;
 }
-
+.foto{
+    display: flex;            
+  align-items: center;      
+  gap: 1rem;       
+}
+.foto img{
+    width: 10rem;             
+  height: 10rem;
+  border-radius: 50%;       
+  object-fit: cover;
+}
+.textofoto{
+    font-size: 2rem;
+}
