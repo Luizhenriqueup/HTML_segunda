@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Revisao bootstrap</title>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md bg-danger p-4 text-white text-center">
+            <h1 class="display 3">Introdução JAVASCRIPT</h1>            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">UP</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sec1">Hello world JS</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <div class="row p-3 mt-3">
+        <div class="col-md" id="sec1">
+            <h2>HELLO WORLD JAVASCRIPT</h2>
+            <p>Ao clicar no botão você vera a data e a hora atual</p>
+        </div>
+        <div class="col-md">
+        <button class="btn btn-warning" onclick="document.getElementById('datahora').innerHTML = Date()">Clique para ver data e hora</button>
+        <p id="datahora"></p>
+        </div>
+        <div class="row p-3 mt-3">
+            <div class="col-md">
+            <h3>Passa o mouse em cima do elemento ao lado</h3>
+        </div>
+        <div class="col-md">
+         <h3 onmouseover="exibir()" onmouseout="sumiu()">Deslize o mouse sobre esse texto!</h3>
+         <p id="texto"></p>
+        </div>
+        </div>
+        <div class="row p-3 mt-3">
+            <div class="col-md">
+                <h4>Clique no botão a baixo para mudar a cor dos outros elementos</h4>
+            </div>
+            <div>
+                <ul>
+                    <li>Cor vermelho</li>
+                    <li>Cor azul</li>
+                    <li>Cor amarelo</li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <h4>Escolhe a cor que voce quer</h4>
+                <button onclick="botao()">Vermelho</button>
+                <button onclick="botao()">amarelo</button>
+                <button onclick="botao()">Azul</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/meuscript.js"></script>
+</html>
