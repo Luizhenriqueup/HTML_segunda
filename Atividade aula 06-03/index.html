@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulario atividade em aula</title>
+</head>
+<body>
+
+    <div class="container text-center bg-light">
+        <h1>Insira seus Dados pessoais</h1>
+
+        <div class="row">
+            <form action="">
+                
+                <div class="container-fluid col-3">
+                    <label>Nome</label>
+                    <input class="form-control" type="text" placeholder="Nome">
+                </div>
+
+                <div class="container-fluid col-3">
+                    <label>Idade</label>
+                    <input class="form-control" type="number" placeholder="Idade">
+                </div>
+
+                <div class="container-fluid col-3">
+                    <label>Cidade</label>
+                    <input class="form-control" type="text" placeholder="Cidade">
+                </div>
+
+                <div class="container-fluid col-3">
+                    <label>Curso</label>
+                    <input class="form-control" type="text" placeholder="Curso">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <h1>Informações sobre seu estudo</h1>
+
+        <form action="">
+
+            <div class="mb-3">
+                <label>Matéria favorita</label>
+                <input class="form-control" type="text" placeholder="Digite a matéria">
+            </div>
+
+            <div class="mb-3">
+                <label>Horas de estudo por dia</label>
+                <input class="form-control" type="number" placeholder="Horas">
+            </div>
+
+            <div class="mb-3">
+                <label>Nível de estudo</label>
+                <select class="form-control">
+                    <option>Ensino médio</option>
+                    <option>Faculdade</option>
+                    <option>Curso técnico</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>O que você acha dos seus estudos?</label>
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label>Como você prefere estudar?</label><br>
+                <input type="radio" name="estudo"> Sozinho
+                <input type="radio" name="estudo"> Em grupo
+            </div>
+
+            <div class="mb-3">
+                <label>Ferramentas que usa para estudar</label><br>
+                <input type="checkbox"> Vídeos<br>
+                <input type="checkbox"> Livros<br>
+                <input type="checkbox"> Internet
+            </div>
+
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
