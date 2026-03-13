@@ -7,9 +7,9 @@ const materia = document.querySelector('input[placeholder="Digite a matéria"]')
 const horas = document.querySelector('input[placeholder="Horas"]');
 const texto = document.querySelector("textarea");
 
-
 const contador = document.createElement("p");
-contador.style.textAlign = "center";
+contador.classList.add("contador");
+
 texto.parentNode.appendChild(contador);
 
 texto.addEventListener("input", function () {
@@ -18,13 +18,7 @@ texto.addEventListener("input", function () {
 
 
 const resultado = document.createElement("div");
-resultado.className = "container text-center mt-5";
-resultado.style.maxWidth = "600px";
-resultado.style.margin = "40px auto";
-resultado.style.padding = "20px";
-resultado.style.border = "1px solid #ddd";
-resultado.style.borderRadius = "10px";
-resultado.style.backgroundColor = "#f8f9fa";
+resultado.className = "container text-center mt-5 resultado";
 
 document.body.appendChild(resultado);
 
@@ -46,18 +40,17 @@ botao.addEventListener("click", function () {
         materia.value === "" ||
         horas.value === ""
     ) {
-        resultado.innerHTML = "<p style='color:red'>Preencha todos os campos!</p>";
+        resultado.innerHTML = "<p class='erro'>Preencha todos os campos!</p>";
         return;
     }
 
     if (idade.value <= 0 || horas.value <= 0) {
-        resultado.innerHTML = "<p style='color:red'>Valores numéricos inválidos.</p>";
+        resultado.innerHTML = "<p class='erro'>Valores numéricos inválidos.</p>";
         return;
     }
 
     const radio = document.querySelector('input[name="estudo"]:checked');
     let modoEstudo = radio ? radio.nextSibling.textContent.trim() : "não informado";
-
 
     resultado.innerHTML = `
         <h3 class="mb-3">Resumo</h3>
